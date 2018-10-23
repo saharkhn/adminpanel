@@ -34,7 +34,7 @@
 	</div><!-- /.sidebar-shortcuts -->
 
 	<ul class="nav nav-list">
-		<li class="active">
+		<li class="" id=''>
 			<a href="index">
 				<i class="menu-icon fa fa-tachometer"></i>
 				<span class="menu-text"> پیشخان </span>
@@ -43,7 +43,7 @@
 			<b class="arrow"></b>
 		</li>
 
-		<li class="">
+		<li class="" id='service'>
 			<a href="/service">
 				<i class="menu-icon fa 	fa-globe "></i>
 				<span class="menu-text"> خدمات </span>
@@ -123,7 +123,6 @@
 
 			<b class="arrow"></b>
 		</li>
-
 
 
 

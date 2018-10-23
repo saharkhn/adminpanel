@@ -166,7 +166,7 @@
 
 @section('script')
         <script type='text/javascript'>
-            
+            $("#service").addClass("active");
         </script>
 
 

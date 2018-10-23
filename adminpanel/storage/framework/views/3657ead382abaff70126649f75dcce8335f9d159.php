@@ -166,6 +166,11 @@
 
 
 <?php $__env->startSection('script'); ?>
+        <script type='text/javascript'>
+            $("#service").addClass("active");
+        </script>
+
+
 
         <!-- inline scripts related to this page -->
         <script type="text/javascript">
