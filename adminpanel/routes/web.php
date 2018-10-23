@@ -25,7 +25,7 @@ Route::get('/service/',function(){
 Route::post('/test',function(){
     
     $id=isset($_POST['id'])?$_POST['id']:'the post is not rech';
-    $temp=DB::table('service')->where('id',$id)->first();
+    $temp=DB::table('services')->where('id',$id)->first();
     $title=$temp->title;
     $brif="this is brif";
     $content='thi is contetn';

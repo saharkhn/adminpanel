@@ -61,6 +61,26 @@
                                     <?php $i=0; /* this is counter for id /radif */      ?>
                                     <?php $__currentLoopData = $services; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $servise): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                         <?php $i++; ?>
+                                        <?php 
+                                            switch ($servise->status){
+                                                case 1:
+                                                    $class='label-success';
+                                                    break;
+                                                case 2:
+                                                    $class='label-inverse';
+                                                    break;
+                                                case 3:
+                                                    $class="label-warning";
+                                                    break;
+                                                default :
+                                                    $class="abel-info";
+                                                    break;
+                                                
+                                                
+                                                }
+                                        
+                                        
+                                        ?>
                                         <tr>
                                             <td class="center">
                         
@@ -81,7 +101,7 @@
 
                                             </td>
                                             <td class="hidden-480">
-                                                <span class="label label-sm label-warning">Expiring</span>
+                                                <span class="label label-sm  arrowed-in <?php echo e($class); ?>">Expiring</span>
                                             </td>
 
                                             <td>

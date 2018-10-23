@@ -63,6 +63,26 @@
                                     <?php $i=0; /* this is counter for id /radif */      ?>
                                     @foreach($services as $servise)
                                         <?php $i++; ?>
+                                        <?php 
+                                            switch ($servise->status){
+                                                case 1:
+                                                    $class='label-success';
+                                                    break;
+                                                case 2:
+                                                    $class='label-inverse';
+                                                    break;
+                                                case 3:
+                                                    $class="label-warning";
+                                                    break;
+                                                default :
+                                                    $class="abel-info";
+                                                    break;
+                                                
+                                                
+                                                }
+                                        
+                                        
+                                        ?>
                                         <tr>
                                             <td class="center">
                         
@@ -80,7 +100,7 @@
                                             {{$servise->des}}
                                             </td>
                                             <td class="hidden-480">
-                                                <span class="label label-sm label-warning">Expiring</span>
+                                                <span class="label label-sm  arrowed-in {{ $class }}">Expiring</span>
                                             </td>
 
                                             <td>
